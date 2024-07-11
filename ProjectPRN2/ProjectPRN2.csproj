@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>window_manager_19644.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\five.png" />
+    <None Remove="img\four.png" />
+    <None Remove="img\icons8-add-16.png" />
+    <None Remove="img\icons8-cancel-48.png" />
+    <None Remove="img\icons8-create-16.png" />
+    <None Remove="img\icons8-delete-16.png" />
+    <None Remove="img\icons8-export-16.png" />
+    <None Remove="img\icons8-manager-64.png" />
+    <None Remove="img\icons8-save-48.png" />
+    <None Remove="img\one.png" />
+    <None Remove="img\six.png" />
+    <None Remove="img\three.png" />
+    <None Remove="img\two.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="window_manager_19644.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.122" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\five.png" />
+    <Resource Include="img\four.png" />
+    <Resource Include="img\icons8-add-16.png" />
+    <Resource Include="img\icons8-cancel-48.png" />
+    <Resource Include="img\icons8-create-16.png" />
+    <Resource Include="img\icons8-delete-16.png" />
+    <Resource Include="img\icons8-export-16.png" />
+    <Resource Include="img\icons8-manager-64.png" />
+    <Resource Include="img\icons8-save-48.png" />
+    <Resource Include="img\one.png" />
+    <Resource Include="img\six.png" />
+    <Resource Include="img\three.png" />
+    <Resource Include="img\two.png" />
+  </ItemGroup>
+
+</Project>

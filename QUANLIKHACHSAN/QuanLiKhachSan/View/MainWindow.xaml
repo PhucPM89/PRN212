@@ -1,0 +1,26 @@
+﻿<Window x:Class="QuanLiKhachSan.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLiKhachSan.ViewModel"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Quản trị viên - Hệ thống quản lý khách sạn" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <DockPanel>
+        <!-- Thanh điều hướng -->
+        <StackPanel DockPanel.Dock="Left" Width="200" Background="LightGray">
+            <Button Content="Quản lý khách hàng" Margin="10" Padding="10" Command="{Binding ShowQLKHCommand}"/>
+            <Button Content="Quản lý phòng" Margin="10" Padding="10" Command="{Binding ShowQLPCommand}"/>
+            <Button Content="Quản lý đặt phòng" Margin="10" Padding="10" Command="{Binding ShowQLDPCommand}"/>
+            <Button Content="Báo cáo" Margin="10" Padding="10" Command="{Binding ShowBCCommand}"/>
+        </StackPanel>
+
+        <!-- Khu vực hiển thị nội dung chính -->
+        <ContentControl Content="{Binding CurrentViewModel}"/>
+    </DockPanel>
+    
+</Window>
